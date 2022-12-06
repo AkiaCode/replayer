@@ -39,7 +39,6 @@ yargs(hideBin(process.argv))
       const json = JSON.parse(data.toString())
       const credentials = await authenticate()
 
-      console.log(yargs.replay)
       if (yargs.replay !== undefined) {
         await createHttp1Request(
           {
