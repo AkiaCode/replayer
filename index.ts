@@ -9,7 +9,7 @@ function sleep(ms: number) {
   while (Date.now() < wakeUpTime) {}
 }
 
-// pnpm run start [MatchIds.json] [Number] [replay_path]
+// pnpm run start download -m [MatchIds.json] -n [Number] -r [replay_path]
 
 yargs(hideBin(process.argv))
   .command('download', '', {
